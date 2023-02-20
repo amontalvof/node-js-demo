@@ -1,0 +1,11 @@
+{
+    "name": "Bruce Wayne",
+    "age": 36,
+    "occupation": "CEO of Wayne Enterprises",
+    "address": {
+        "street": "Wayne Manor",
+        "city": "Gotham",
+        "state": "New York",
+        "country": "USA"
+    }
+}
