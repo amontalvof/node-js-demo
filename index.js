@@ -1,28 +1,10 @@
-const path = require('node:path');
+function greet(name) {
+    console.log(`Hello ${name}!`);
+}
 
-console.log(__filename);
-console.log(__dirname);
-console.log('-----------------');
-console.log(path.basename(__filename));
-console.log(path.basename(__dirname));
-console.log('-----------------');
-console.log(path.extname(__filename));
-console.log(path.extname(__dirname));
-console.log('-----------------');
-console.log(path.parse(__filename));
-console.log(path.parse(__dirname));
-console.log('-----------------');
-console.log(path.format(path.parse(__filename)));
-console.log(path.format(path.parse(__dirname)));
-console.log('-----------------');
-console.log(path.isAbsolute(__filename));
-console.log(path.isAbsolute(__dirname));
-console.log(path.isAbsolute('./src/add.js'));
-console.log('-----------------');
-console.log(path.join('folder1', 'folder2', 'index.html'));
-console.log(path.join('/folder1', '//folder2', '../index.html'));
-console.log(path.join(__dirname, 'src', 'add.js'));
-console.log('-----------------');
-console.log(path.resolve('folder1', 'folder2', 'index.html'));
-console.log(path.resolve('/folder1', '//folder2', '../index.html'));
-console.log(path.resolve(__dirname, 'src', 'add.js'));
+function higherOrderFunction(callback) {
+    const name = 'Andy';
+    callback(name);
+}
+
+higherOrderFunction(greet);
