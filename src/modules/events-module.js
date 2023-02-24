@@ -13,4 +13,5 @@ emitter.on('order-pizza', (size) => {
 });
 
 console.log('Other code here');
+
 emitter.emit('order-pizza', 'large', 'extra cheese');
