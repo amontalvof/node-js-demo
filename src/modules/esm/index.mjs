@@ -1,4 +1,4 @@
-import { add, subtract } from './src/math-esm.mjs';
+import { add, subtract } from './math-esm.mjs';
 
 // import * as math from './src/math-esm.mjs';
 // const { add, subtract } = math;
