@@ -5,10 +5,12 @@ const fs = require('node:fs');
 const htmlPath = path.join(__dirname, '../../../index.html');
 
 const server = http.createServer((req, res) => {
+    const name = 'Andy';
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    fs.createReadStream(htmlPath).pipe(res);
-    // const html = fs.readFileSync(htmlPath, 'utf8');
-    // res.end(html);
+    let html = fs.readFileSync(htmlPath, 'utf8');
+    html = html.replace('{{name}}', name);
+    res.end(html);
+    // fs.createReadStream(htmlPath).pipe(res);
 });
 
 server.listen(3000, () => {
