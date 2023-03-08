@@ -2,7 +2,7 @@ const path = require('node:path');
 const http = require('node:http');
 const fs = require('node:fs');
 
-const htmlPath = path.join(__dirname, '../../../index.html');
+const htmlPath = path.join(__dirname, '../../../../index.html');
 
 const server = http.createServer((req, res) => {
     const name = 'Andy';

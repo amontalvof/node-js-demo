@@ -1,7 +1,7 @@
 const path = require('node:path');
 const fs = require('node:fs/promises');
 
-const filePath = path.join(__dirname, '../../../file.txt');
+const filePath = path.join(__dirname, '../../../../file.txt');
 
 console.log('first');
 

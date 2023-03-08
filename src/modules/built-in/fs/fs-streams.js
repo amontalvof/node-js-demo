@@ -1,8 +1,8 @@
 const path = require('node:path');
 const fs = require('node:fs');
 
-const filePath = path.join(__dirname, '../../../file.txt');
-const fileCopyPath = path.join(__dirname, '../../../file-copy.txt');
+const filePath = path.join(__dirname, '../../../../file.txt');
+const fileCopyPath = path.join(__dirname, '../../../../file-copy.txt');
 
 const readableStream = fs.createReadStream(filePath, {
     encoding: 'utf-8',
